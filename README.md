@@ -36,7 +36,7 @@ public class MyUserConfig : IConfig
 ConfigManager.Initialize(ConfigDirPath, ConfigFileName, new MyUserConfig());
 
 // update configuration
-UserConfig.Config.Name = "Karen";
+ConfigManager.Config.Name = "Karen";
 
 // save user settings
 ConfigManager.GetInstance().SaveSettings();
@@ -45,7 +45,7 @@ ConfigManager.GetInstance().SaveSettings();
 ConfigManager.GetInstance().LoadSettings();
 
 // deinitialize
-UserConfig.GetInstance().DeInit();
+ConfigManager.GetInstance().DeInit();
 ```
 
 ## How To Contribute
